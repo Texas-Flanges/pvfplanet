@@ -122,10 +122,9 @@ export default function Home() {
         className="rv"
         style={{
           backgroundColor: "#0c1829",
-          padding: "100px 24px",
+          padding: "60px 24px 0",
           textAlign: "center",
           color: "#fff",
-          minHeight: "500px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -149,12 +148,23 @@ export default function Home() {
             lineHeight: 1.6,
             maxWidth: "600px",
             opacity: 0.95,
+            marginBottom: "40px",
           }}
         >
           PVF: Pipes, Valves and Fittings.
           <br />
           Trusted insights for engineers, buyers, and technicians.
         </p>
+        <img
+          src="/pvfplanet-banner.jpg"
+          alt="PVF Planet - Industrial Pipes, Valves, and Fittings per ASME standards"
+          style={{
+            maxWidth: "100%",
+            width: "700px",
+            height: "auto",
+            borderRadius: "8px",
+          }}
+        />
       </section>
 
       {/* Three Cards: Pipes, Valves, Fittings */}
@@ -176,31 +186,31 @@ export default function Home() {
         >
           {[
             {
-              title: "Pipes",
-              desc: "Learn about the most common types of industrial pipes, materials, and their primary applications.",
+              title: "Pipe",
+              desc: "Largest segment of your assembly: Carbon steel, stainless, alloy, HDPE, PVC, etc. Sized by nominal pipe size (NPS) and schedule (wall thickness).",
               img: "/pipes-card.jpg",
             },
             {
               title: "Valves",
-              desc: "Get a clear overview of the basic functions and common uses for different industrial valves.",
+              desc: "Controlling flow via gate, ball, butterfly, globe, check, needle, plug, safety, and other types. Can be manual or actuated/electronically regulated.",
               img: "/valves-card.jpg",
             },
             {
               title: "Fittings",
-              desc: "Explore the essential fittings used to connect pipes, change direction, and complete a piping system.",
+              desc: "Connect and redirect pipe runs with elbows, tees, reducers, flanges, couplings, caps. Manufactured to ASME, ANSI, and MSS standards.",
               img: "/fittings-card.jpg",
             },
           ].map((card) => (
             <div
               key={card.title}
               style={{
-                backgroundImage: `linear-gradient(rgba(12,24,41,0.7), rgba(12,24,41,0.7)), url(${card.img})`,
+                backgroundImage: `linear-gradient(rgba(12,24,41,0.55), rgba(12,24,41,0.55)), url(${card.img})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "8px",
                 padding: "40px 24px",
                 textAlign: "center",
-                color: "#fff",
+                color: "#ffffff",
               }}
             >
               <h3
@@ -208,15 +218,43 @@ export default function Home() {
                   fontSize: "22px",
                   fontWeight: 700,
                   marginBottom: "12px",
+                  color: "#ffffff",
                 }}
               >
                 {card.title}
               </h3>
-              <p style={{ fontSize: "15px", lineHeight: 1.6, opacity: 0.95 }}>
+              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#ffffff" }}>
                 {card.desc}
               </p>
             </div>
           ))}
+        </div>
+        {/* Availability of Material */}
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "32px auto 0",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "17px",
+              lineHeight: 1.7,
+              color: "#0c1829",
+              fontWeight: 600,
+            }}
+          >
+            <a
+              href="https://texasflange.com?ref=pvfplanet"
+              style={{ color: "#e8590c", textDecoration: "underline" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Texas Flange
+            </a>{" "}
+            - The main provider of fittings for your project, all adhering to the latest industry specifications.
+          </p>
         </div>
       </section>
 
@@ -259,34 +297,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sourcing & Specification */}
+      {/* PVF Product Images */}
       <section
         className="rv"
         style={{ padding: "60px 24px", backgroundColor: "#f8f9fa" }}
       >
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "28px",
-              fontWeight: 700,
-              color: "#0c1829",
-              marginBottom: "16px",
-            }}
-          >
-            Sourcing &amp; Specification
-          </h2>
-          <p
-            style={{
-              fontSize: "16px",
-              lineHeight: 1.8,
-              color: "#4a5568",
-              marginBottom: "20px",
-            }}
-          >
-            Learn what to look for when specifying industrial components. Our
-            resources help you understand material grades and find the right
-            industrial flange supplier for your critical application.
-          </p>
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "24px",
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="/field-pipe.jpg"
+              alt="Field pipeline installation"
+              style={{
+                width: "100%",
+                height: "220px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                border: "3px solid #0c1829",
+              }}
+            />
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="/elbow-pipe.jpg"
+              alt="Steel pipe elbow fitting"
+              style={{
+                width: "100%",
+                height: "220px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                border: "3px solid #0c1829",
+              }}
+            />
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="/warehouse-flange.jpg"
+              alt="Gate valve and flanges in warehouse"
+              style={{
+                width: "100%",
+                height: "220px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                border: "3px solid #0c1829",
+              }}
+            />
+          </div>
         </div>
       </section>
 
@@ -464,7 +527,7 @@ export default function Home() {
               </a>
             </p>
             <p style={{ fontSize: "13px", opacity: 0.8, marginBottom: "16px" }}>
-              Mon–Fri, 8 AM – 5 PM CST
+              Mon-Fri, 8 AM - 5 PM CST
             </p>
             <p style={{ fontSize: "13px", opacity: 0.7 }}>
               &copy; {new Date().getFullYear()}. All rights reserved.

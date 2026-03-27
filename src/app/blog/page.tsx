@@ -77,14 +77,24 @@ export default function BlogPage() {
         }}
       >
         <h1 style={{ fontSize: "36px", fontWeight: 700 }}>PVF Planet Blog</h1>
-        <p style={{ fontSize: "16px", opacity: 0.9, marginTop: "12px" }}>
+        <p style={{ fontSize: "16px", opacity: 0.9, marginTop: "12px", marginBottom: "32px" }}>
           Industry insights and educational resources
         </p>
+        <img
+          src="/pvfplanet-banner.jpg"
+          alt="PVF Planet - Industrial Pipes, Valves, and Fittings"
+          style={{
+            maxWidth: "100%",
+            width: "600px",
+            height: "auto",
+            borderRadius: "8px",
+          }}
+        />
       </section>
 
-      {/* Blog Post Card */}
+      {/* Blog Post Cards */}
       <section style={{ padding: "60px 24px", backgroundColor: "#f8f9fa" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "32px" }}>
           <Link
             href="/blog/inside-the-world-of-pipes-valves-and-fittings"
             style={{ textDecoration: "none", color: "inherit" }}
@@ -130,6 +140,147 @@ export default function BlogPage() {
               </div>
             </article>
           </Link>
+
+          {/* Additional Blog Posts */}
+          <article
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "8px",
+              overflow: "hidden",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              display: "grid",
+              gridTemplateColumns: "200px 1fr",
+            }}
+          >
+            <img
+              src="/field-pipe.jpg"
+              alt="Pipeline field installation"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+            <div style={{ padding: "24px" }}>
+              <p style={{ fontSize: "13px", color: "#888", marginBottom: "8px" }}>
+                July 15, 2024
+              </p>
+              <h2
+                style={{
+                  fontSize: "20px",
+                  fontWeight: 700,
+                  color: "#0c1829",
+                  marginBottom: "8px",
+                }}
+              >
+                Understanding Carbon Steel Pipe Grades and Schedules
+              </h2>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#555" }}>
+                A practical guide to selecting the right pipe grade and wall thickness for your project - from standard A106 Grade B to high-yield applications.
+              </p>
+            </div>
+          </article>
+
+          <article
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "8px",
+              overflow: "hidden",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              display: "grid",
+              gridTemplateColumns: "200px 1fr",
+            }}
+          >
+            <img
+              src="/elbow-pipe.jpg"
+              alt="Steel pipe elbow fitting"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+            <div style={{ padding: "24px" }}>
+              <p style={{ fontSize: "13px", color: "#888", marginBottom: "8px" }}>
+                September 3, 2024
+              </p>
+              <h2
+                style={{
+                  fontSize: "20px",
+                  fontWeight: 700,
+                  color: "#0c1829",
+                  marginBottom: "8px",
+                }}
+              >
+                Butt-Weld Fittings: Elbows, Tees, and Reducers Explained
+              </h2>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#555" }}>
+                How butt-weld fittings connect and redirect piping systems. Covers long radius vs. short radius elbows, equal and reducing tees, and concentric vs. eccentric reducers.
+              </p>
+            </div>
+          </article>
+
+          <article
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "8px",
+              overflow: "hidden",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              display: "grid",
+              gridTemplateColumns: "200px 1fr",
+            }}
+          >
+            <img
+              src="/warehouse-flange.jpg"
+              alt="Gate valve and flanges in warehouse"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+            <div style={{ padding: "24px" }}>
+              <p style={{ fontSize: "13px", color: "#888", marginBottom: "8px" }}>
+                November 12, 2024
+              </p>
+              <h2
+                style={{
+                  fontSize: "20px",
+                  fontWeight: 700,
+                  color: "#0c1829",
+                  marginBottom: "8px",
+                }}
+              >
+                Gate Valves vs. Ball Valves: Choosing the Right Valve
+              </h2>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#555" }}>
+                Comparing the two most common isolation valves in the PVF industry. Learn when to specify gate valves for full-bore flow and when ball valves offer a better solution.
+              </p>
+            </div>
+          </article>
+
+          <article
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "8px",
+              overflow: "hidden",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              display: "grid",
+              gridTemplateColumns: "200px 1fr",
+            }}
+          >
+            <img
+              src="/fittings-card.jpg"
+              alt="Industrial pipe fittings"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+            <div style={{ padding: "24px" }}>
+              <p style={{ fontSize: "13px", color: "#888", marginBottom: "8px" }}>
+                January 20, 2025
+              </p>
+              <h2
+                style={{
+                  fontSize: "20px",
+                  fontWeight: 700,
+                  color: "#0c1829",
+                  marginBottom: "8px",
+                }}
+              >
+                ASME vs. API: Understanding PVF Industry Standards
+              </h2>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#555" }}>
+                A breakdown of the major standards governing pipes, valves, and fittings - from ASME B16.5 flanges to API 600 gate valves and everything in between.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
