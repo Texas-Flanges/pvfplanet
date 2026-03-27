@@ -122,7 +122,7 @@ export default function Home() {
         className="rv"
         style={{
           backgroundColor: "#0c1829",
-          padding: "60px 24px 0",
+          padding: "30px 24px 0",
           textAlign: "center",
           color: "#fff",
           display: "flex",
@@ -133,10 +133,10 @@ export default function Home() {
       >
         <h1
           style={{
-            fontSize: "clamp(36px, 5vw, 64px)",
+            fontSize: "clamp(28px, 4vw, 48px)",
             fontWeight: 700,
             lineHeight: 1.15,
-            marginBottom: "24px",
+            marginBottom: "12px",
             maxWidth: "700px",
           }}
         >
@@ -144,11 +144,11 @@ export default function Home() {
         </h1>
         <p
           style={{
-            fontSize: "18px",
-            lineHeight: 1.6,
+            fontSize: "16px",
+            lineHeight: 1.5,
             maxWidth: "600px",
             opacity: 0.95,
-            marginBottom: "40px",
+            marginBottom: "20px",
           }}
         >
           PVF: Pipes, Valves and Fittings.
@@ -160,9 +160,9 @@ export default function Home() {
           alt="PVF Planet - Industrial Pipes, Valves, and Fittings per ASME standards"
           style={{
             maxWidth: "100%",
-            width: "700px",
+            width: "100%",
             height: "auto",
-            borderRadius: "8px",
+            borderRadius: "8px 8px 0 0",
           }}
         />
       </section>
