@@ -121,50 +121,44 @@ export default function Home() {
       <section
         className="rv"
         style={{
-          backgroundColor: "#0c1829",
-          padding: "30px 24px 0",
+          backgroundImage: "linear-gradient(rgba(12,24,41,0.55), rgba(12,24,41,0.55)), url(/pvfplanet-banner.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          padding: "80px 24px",
           textAlign: "center",
           color: "#fff",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          minHeight: "380px",
         }}
       >
         <h1
           style={{
-            fontSize: "clamp(28px, 4vw, 48px)",
+            fontSize: "clamp(36px, 5vw, 56px)",
             fontWeight: 700,
             lineHeight: 1.15,
-            marginBottom: "12px",
+            marginBottom: "16px",
             maxWidth: "700px",
+            textShadow: "0 2px 8px rgba(0,0,0,0.5)",
           }}
         >
           Your PVF Industry Resource Hub
         </h1>
         <p
           style={{
-            fontSize: "16px",
-            lineHeight: 1.5,
+            fontSize: "18px",
+            lineHeight: 1.6,
             maxWidth: "600px",
             opacity: 0.95,
-            marginBottom: "20px",
+            textShadow: "0 1px 4px rgba(0,0,0,0.4)",
           }}
         >
           PVF: Pipes, Valves and Fittings.
           <br />
           Trusted insights for engineers, buyers, and technicians.
         </p>
-        <img
-          src="/pvfplanet-banner.jpg"
-          alt="PVF Planet - Industrial Pipes, Valves, and Fittings per ASME standards"
-          style={{
-            maxWidth: "100%",
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px 8px 0 0",
-          }}
-        />
       </section>
 
       {/* Three Cards: Pipes, Valves, Fittings */}
