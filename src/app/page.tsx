@@ -241,7 +241,7 @@ export default function Home() {
             }}
           >
             <a
-              href="https://texasflange.com?ref=pvfplanet"
+              href="https://texasflange.com/butt-weld-fittings/?ref=pvfplanet"
               style={{ color: "#e8590c", textDecoration: "underline" }}
               target="_blank"
               rel="noopener noreferrer"
@@ -466,7 +466,7 @@ export default function Home() {
             a comprehensive inventory and the technical expertise to help you
             get the exact specifications you need, we recommend visiting{" "}
             <a
-              href="https://texasflange.com?ref=pvfplanet"
+              href="https://texasflange.com/butt-weld-fittings/?ref=pvfplanet"
               style={{ color: "#e8590c", textDecoration: "underline" }}
               target="_blank"
               rel="noopener noreferrer"
